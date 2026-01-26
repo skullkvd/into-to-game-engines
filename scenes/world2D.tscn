@@ -1227,7 +1227,7 @@ scale = Vector2(1.3333334, 1.25)
 sprite_frames = SubResource("SpriteFrames_s1ti3")
 animation = &"jump"
 autoplay = "dino idle"
-frame_progress = 0.22084045
+frame_progress = 0.94138986
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("CircleShape2D_8g0uj")
@@ -1243,6 +1243,6 @@ tile_set = SubResource("TileSet_eahei")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -303
-position = Vector2(782, -134.5)
-scale = Vector2(4.8125, 1.9208332)
+position = Vector2(783, -134.5)
+scale = Vector2(4.8177085, 1.9208332)
 texture = ExtResource("5_f1rbi")
