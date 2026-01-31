@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctg6235d7nruf"]
+
+[ext_resource type="Texture2D" uid="uid://cu23eml3hv1te" path="res://assets/items/fruit.png" id="1_yvtr8"]
+[ext_resource type="Script" uid="uid://bk4562v8nlml0" path="res://fruit.gd" id="2_t2alg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_64keg"]
+radius = 4.1231055
+
+[node name="fruit_hp" type="Area2D"]
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yvtr8")
+region_enabled = true
+region_rect = Rect2(0, 34, 16, 14)
+script = ExtResource("2_t2alg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_64keg")
+
+[connection signal="body_entered" from="." to="Sprite2D" method="_on_area_2d_body_entered"]
