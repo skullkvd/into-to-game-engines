@@ -6,6 +6,15 @@ const JUMP_VELOCITY = -300.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+
+var took_damage: bool = false
+
+func respawn():
+	self.global_position = Vector2(1,1)
+
+
+
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -41,5 +50,5 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func body_after_stomp():
+func bounce_after_stomp():
 	velocity.y = -300

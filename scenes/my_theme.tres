@@ -1,0 +1,14 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://ci6kx8j73mkxo"]
+
+[ext_resource type="Texture2D" uid="uid://y6u8iygiy50p" path="res://assets/tilesets/back.png" id="1_8ha52"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0rn8s"]
+texture = ExtResource("1_8ha52")
+expand_margin_left = 495.0
+expand_margin_top = 274.0
+expand_margin_right = 496.0
+expand_margin_bottom = 274.0
+modulate_color = Color(0.30372575, 0.7333921, 0.8214578, 1)
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_0rn8s")
